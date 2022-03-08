@@ -1,0 +1,25 @@
+{
+  "name": "day_5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  },
+  "dependencies": {
+    "dirname": "^0.1.0",
+    "express": "^4.17.3",
+    "hbs": "^4.2.0",
+    "node-modules": "^0.0.1",
+    "path": "^0.12.7"
+  },
+  "description": ""
+}

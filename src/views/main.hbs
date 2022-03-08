@@ -1,0 +1,31 @@
+
+<h1 class="d-flex justify-content-center">BlogPost</h1>
+
+<div class="mb-3" class="d-flex justify-content-center">
+    <form style="margin-top: 20px" class="d-flex flex-column align-items-center" action="/postList" method="POST">
+  <div style="margin-top: 20px">
+  <input name="name" type="text" class="form-control" placeholder="Your Name">
+  </div>
+  <div style="margin-top: 20px">
+  <input name="title" placeholder="Название поста" type="text" class="form-control">
+  </div>
+  <div  style="margin: 20px 0px 20px 0px">
+  <textarea name="content" style="width: 600px" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="some text..."></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+</div>
+<hr />
+<section class="d-flex flex-column align-items-center">
+    {{#each cardOfBlog}}
+<div class="card my-2" style="width: 600px;">
+  <div class="card-body">
+      <h5>{{this.name}}</h5>
+      <h4>{{this.title}}</h4>
+    <p class="card-text">{{this.content}}</p>
+  </div>
+</div>
+{{/each}}
+</section>
+
+   
