@@ -7,11 +7,15 @@
   <input name="name" type="text" class="form-control" placeholder="Your Name">
   </div>
   <div style="margin-top: 20px">
-  <input name="title" placeholder="Название поста" type="text" class="form-control">
+  <input name="title" placeholder="Description" type="text" class="form-control">
   </div>
   <div  style="margin: 20px 0px 20px 0px">
   <textarea name="content" style="width: 600px" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="some text..."></textarea>
   </div>
+  <div class="mb-3">
+  <label for="formFile" class="form-label d-flex flex-column align-items-center">Add a Photo</label>
+  <input name="pictures" class="form-control" type="file" id="formFile">
+</div>
   <button type="submit" class="btn btn-primary">Отправить</button>
 </form>
 </div>
@@ -23,6 +27,7 @@
       <h5>{{this.name}}</h5>
       <h4>{{this.title}}</h4>
     <p class="card-text">{{this.content}}</p>
+    <img style="width: 550px" src="https://img.freepik.com/free-photo/river-surrounded-by-forests-under-a-cloudy-sky-in-thuringia-in-germany_181624-30863.jpg?size=626&ext=jpg" alt="">
   </div>
 </div>
 {{/each}}

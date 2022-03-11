@@ -15,6 +15,8 @@ server.set('views', path.join(__dirname, 'src', 'views'))
 
 server.use(express.urlencoded({ extended: true }))
 
+server.use(express.static(path.join(process.cwd(), 'public')))
+
 server.get('/', (req, res) => {
   const blogQuery = req.query
   let peopleForRender = db.blog
